@@ -1,9 +1,10 @@
-# RainWise
+# M.A.R.T.A.
+**Mapa de Agua, Recursos, Territorio y Areas verdes.**
 Proyecto desarrollado por el equipo Climate Alchemists para el NASA Space Apps Guanajuato 2024.
 
 ## Índice
 
-- [RainWise](#rainwise)
+- [M.A.R.T.A.](#marta)
   - [Índice](#índice)
   - [Descripción](#descripción)
   - [Palabras clave](#palabras-clave)
@@ -13,18 +14,19 @@ Proyecto desarrollado por el equipo Climate Alchemists para el NASA Space Apps G
   - [Colaboradores](#colaboradores)
 
 ## Descripción
-Plataforma web interactiva para la concientización de la población sobre la importancia de la infraestructura de servicios, calidad del aire y calidad del agua con un trasfondo científico.
+Plataforma web interactiva para la concientización de la población sobre la importancia de la infraestructura de servicios, calidad del aire y calidad del agua con un trasfondo científico y tecnológico.
 
 ## Palabras clave
-Inteligencia artificial, aprendizaje máquina, visión por computadora, imágenes satelitales, predicción de series de tiempo, modelo oculto de Markov, GridSearch, ARIMA, YOLO, Long-Short-Term-Memory, Programación web, infraestructura de servicios, calidad del agua, calidad del aire.
+Inteligencia artificial, aprendizaje máquina, visión por computadora, imágenes satelitales, predicción de series de tiempo, YOLO, Long-Short-Term-Memory,
+interpolación de Krigging, programación web, infraestructura de servicios, calidad del agua, calidad del aire.
 
 ## Estatus
 
-Actualmente, el proyecto se encuentra en desarrollo. Se ha implementado un prototipo inicial
+Actualmente, el proyecto se encuentra en desarrollo. Se ha implementado un prototipo inicial con la intensión de llamar la atención del público.
 
 ## Características
-
-- 
+- A partir de las coordenadas geográficas de un individuo, analiza locaciones de interés de infraestructura para determinar riesgos potenciales o ventanas de oportunidad con la intesión de ayudar a mejorar comunidades.
+- Convierte las estadíticas y el lenguaje técnico a una charla común que pueda ser más accesible para la población general.
 
 ## Tecnologías utilizadas
 - 🐍 Python - lenguaje de programación multipropósito sumamente accesible.

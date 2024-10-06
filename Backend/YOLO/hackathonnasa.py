@@ -11,7 +11,7 @@ def getMap(lat, lng):
     zoom = str(19)
     size = '640x640'
 
-    url = 'https://maps.googleapis.com/maps/api/staticmap?center=' + lat + ','+ lng +'&zoom='+ zoom +'&size=' + size +'&maptype=satellite&key=AIzaSyDgZH9oTHZn_MJ-m0rUfNg52l9_zAqzwuI'
+    url = 'https://maps.googleapis.com/maps/api/staticmap?center=' + lat + ','+ lng +'&zoom='+ zoom +'&size=' + size +'&maptype=satellite&key=MY_API_KEY'
     save_as = 'img.png'
 
     urllib.request.urlretrieve(url, save_as)

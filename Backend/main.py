@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import propios
 from YOLO.hackathonnasa import EnhanceBaldio
+import requests
+import google.generativeai as genai
 
 app = Flask(__name__)
 CORS(app)
@@ -9,6 +11,15 @@ CORS(app)
 @app.route('/getImage', methods=['GET'])
 def getImage():
     return send_file('static/imagen_concatenada.png', mimetype='image/png')
+
+@app.route('/postGeminiPrompt', methods=['POST'])
+def getPrompt():
+    data = request.json
+    prompt = data.get('prompt')
+    genai.configure(api_key='MY_API_KEY')
+    model = genai.GenerativeModel('gemini-1.5-flash')
+    response = model.generate_content(prompt)
+    return response.text
 
 @app.route('/process_coordinates', methods=['POST'])
 def process_coordinates():
@@ -18,12 +29,9 @@ def process_coordinates():
     lng = data.get('lng')
     EnhanceBaldio(lat, lng)
 
-    response_message = "hola" + str(lat+lng)
-    print(response_message)
     return jsonify({
         "lat" : lat,
-        "lng" : lng,
-        "message": response_message})
+        "lng" : lng})
 
 @app.route('/getBaldio', methods=['POST'])
 def getBaldios():

@@ -1,9 +1,10 @@
-# RainWise
+# M.A.R.T.A. 
+**Map of Aquatic resources, Regions, Territories, and Areas of greenery.**
 Project developed by the Climate Alchemists team for NASA Space Apps Guanajuato 2024.
 
 ## Index
 
-- [RainWise](#rainwise)
+- [M.A.R.T.A.](#marta)
   - [Index](#index)
   - [Summary](#summary)
   - [Keywords](#keywords)
@@ -13,14 +14,17 @@ Project developed by the Climate Alchemists team for NASA Space Apps Guanajuato 
   - [Colaborators](#colaborators)
  
 ## Summary
-
+Interactive web platform to raise awareness among the population about the importance of service infrastructure, air quality and water quality with a scientific and technological background.
 
 ## Keywords
 Artificial intelligence, machine learning, computer vision, satellite imagery, time series prediction,  GridSearch, ARIMA, YOLO, Long-Short-Term-Memory, Web Programming, public services infraestructure, air quality, water quality.
 
 ## Status
+Currently, the project is in development. An initial prototype has been implemented with the intention of attracting the public's attention.
 
 ## Features
+- Based on an individual's geographic coordinates, it analyzes infrastructure locations of interest to determine potential risks or windows of opportunity with the intention of helping to improve communities.
+- Convert statistics and technical language into common conversation that can be more accessible to the general population.
 
 ## Technologies Used
 - 🐍 Python - highly accessible multipurpose programming language.
