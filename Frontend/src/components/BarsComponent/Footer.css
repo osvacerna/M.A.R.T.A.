@@ -1,0 +1,13 @@
+#fondo {
+    position: relative;
+    /* Permite que el footer se posicione en relación con el contenido */
+    width: 100%;
+    /* Ancho completo */
+    background-color: #447065 !important;
+    /* Color de fondo (ajusta según sea necesario) */
+}
+
+.py-3 {
+    flex-grow: 1;
+    /* Permite que este div crezca para llenar el espacio */
+}

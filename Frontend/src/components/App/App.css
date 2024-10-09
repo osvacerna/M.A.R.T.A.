@@ -1,0 +1,24 @@
+.full-height {
+    height: 150vh;
+}
+
+.main-background {
+    background: linear-gradient(to bottom, #789998, #efd8b8);
+}
+
+.container {
+    display: flex;
+}
+
+.map {
+    flex: 1;
+    background-color: #f0f0f0;
+}
+
+.info {
+    flex: 1;
+    background-color: #cdcdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

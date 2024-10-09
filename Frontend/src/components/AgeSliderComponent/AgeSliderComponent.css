@@ -1,0 +1,20 @@
+.ageslider-background {
+    background: linear-gradient(to bottom, #789998, #efd8b8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-color{
+    background-color: #0e7b11 !important;
+    border-color: #055707 !important;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #0e7b11;
+    border-radius: 50%;
+    border: 2px solid #055707;
+}

@@ -1,0 +1,27 @@
+.navbar {
+    padding: 0.25rem 1rem;
+    /* Reduce el padding para que la barra sea más delgada */
+
+    height: 8vh;
+    /* Define una altura específica para la barra de navegación */
+
+    background-color: #3e6776 !important;
+}
+
+.custom-primary {
+    background-color: #4CAF50;
+    /* Cambia el color de fondo */
+    border-color: #4CAF50;
+    /* Cambia el color del borde */
+    color: white;
+    /* Cambia el color del texto */
+}
+
+.custom-secondary {
+    background-color: #2196F3;
+    /* Cambia el color de fondo */
+    border-color: #2196F3;
+    /* Cambia el color del borde */
+    color: white;
+    /* Cambia el color del texto */
+}
