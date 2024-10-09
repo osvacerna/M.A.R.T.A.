@@ -1,5 +1,4 @@
 from geopy.distance import geodesic
-import json
 import matplotlib.pyplot as plt
 import numpy as np
 import os.path
@@ -9,7 +8,18 @@ import plotly.io as pio
 from plotly.subplots import make_subplots
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RationalQuadratic
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+import json
+
+def getMapsAPIkey():
+    with open('APIS.json', 'r') as file:
+        data = json.load(file)
+    return data.get('GoogleMaps')
+
+def getGenLanModAPIkey():
+    with open('APIS.json', 'r') as file:
+        data = json.load(file)
+    return data.get('GoogleGenLanMod')
 
 def calcular_distancia_mas_cercana(lat, lon):
     df = pd.read_csv('datasets/Coords_Estaciones_de_Monitoreo_AGUA_gto.csv')

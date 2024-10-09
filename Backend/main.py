@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import propios
 from YOLO.hackathonnasa import EnhanceBaldio
-import requests
 import google.generativeai as genai
 
 app = Flask(__name__)
@@ -16,7 +15,7 @@ def getImage():
 def getPrompt():
     data = request.json
     prompt = data.get('prompt')
-    genai.configure(api_key='MY_API_KEY')
+    genai.configure(api_key=propios.getGenLanModAPIkey())
     model = genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content(prompt)
     return response.text
